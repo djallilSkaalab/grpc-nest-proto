@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package transaction;
+
+service TransactionService {
+  rpc GetTransactions (GetTransactionsRequest) returns (GetTransactionsResponse) {}
+}
+
+// GetTransactions
+
+message GetTransactionsRequest {
+  string info = 1;
+}
+
+message GetTransactionsResponse {
+  string info = 1;
+}
